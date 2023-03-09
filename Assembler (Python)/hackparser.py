@@ -33,33 +33,3 @@ class ASMParser:
         continue
       currentLine += 1
     return symbolTable
-        
-
-        
-        
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-   
-
-      
-
-
-
-   
-    
-
-
-    
