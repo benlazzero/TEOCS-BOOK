@@ -11,12 +11,10 @@ asmText = ''
 with open(asmPath, "r") as asmFile: 
   asmText = asmFile.read()
   
-claz = hackparser.ASMParser(tables.constantSymbols, asmText)
-#print(claz.instructions)
-#print(claz.symbolTable)
+parsedASM = hackparser.ASMParser(tables.constantSymbols, asmText)
 
-codz = coder.ASMCoder(claz.symbolTable, claz.instructions)
-codz()
+coderASM = coder.ASMCoder(parsedASM.symbolTable, parsedASM.instructions)
+coderASM()
 
 
 
