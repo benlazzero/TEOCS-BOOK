@@ -15,9 +15,3 @@ parsedASM = hackparser.ASMParser(tables.constantSymbols, asmText)
 
 coderASM = coder.ASMCoder(parsedASM.symbolTable, parsedASM.instructions)
 coderASM()
-
-
-
-
-    
-
