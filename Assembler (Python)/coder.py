@@ -77,20 +77,4 @@ class ASMCoder:
   
   def HandleLabel(self, Linst):
     labelSymbol = Linst[1:len(Linst)-1]
-    return NumToBin16(self.symbolTable[labelSymbol])
-                             
-
-  
-    
-    
-    
-     
-     
-
-      
-
-
-
-
-
-        
+    return NumToBin16(self.symbolTable[labelSymbol])      
